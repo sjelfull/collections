@@ -48,7 +48,7 @@ class CollectionsPlugin extends BasePlugin
      */
     public function getDocumentationUrl ()
     {
-        return 'https://github.com/sjelfull/collections/blob/master/README.md';
+        return 'https://superbig.co/plugins/collections';
     }
 
     /**
@@ -56,7 +56,7 @@ class CollectionsPlugin extends BasePlugin
      */
     public function getReleaseFeedUrl ()
     {
-        return 'https://raw.githubusercontent.com/sjelfull/collections/master/releases.json';
+        return 'https://superbig.co/plugins/collections/feed';
     }
 
     /**
@@ -107,29 +107,5 @@ class CollectionsPlugin extends BasePlugin
         Craft::import('plugins.collections.twigextensions.CollectionsTwigExtension');
 
         return new CollectionsTwigExtension();
-    }
-
-    /**
-     */
-    public function onBeforeInstall ()
-    {
-    }
-
-    /**
-     */
-    public function onAfterInstall ()
-    {
-    }
-
-    /**
-     */
-    public function onBeforeUninstall ()
-    {
-    }
-
-    /**
-     */
-    public function onAfterUninstall ()
-    {
     }
 }
